@@ -33,7 +33,7 @@ public class Santa : MonoBehaviour
 		rigidbody.velocity = forward * Velocity;
 
 		float angle = Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg;
-		rigidbody.MovePosition();		
+		rigidbody.MovePosition();			
 		rigidbody.MoveRotation(angle);
 	}
 }
