@@ -5,15 +5,16 @@ using UnityEngine;
 public class Planet : MonoBehaviour 
 {
 	public float Torque = 1.0f;
-	private Rigidbody2D rigidbody;
+	public Rigidbody2D body;
 
 	void Start () 
 	{
-		rigidbody = GetComponent<Rigidbody2D>();
+		body = GetComponent<Rigidbody2D>();
+		body.angularVelocity = Torque;
 	}
 	
 	void FixedUpdate () 
 	{	
-		rigidbody.MoveRotation(rigidbody.rotation + Torque);
+		//rigidbody.MoveRotation(rigidbody.rotation + Torque);
 	}
 }

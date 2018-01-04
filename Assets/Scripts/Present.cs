@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HelloWorld : MonoBehaviour {
+public class Present : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		Debug.Log("Hello Wordl!");
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	void OnMouseUp()
+	{
+		Debug.Log("AAA");
 	}
 }
